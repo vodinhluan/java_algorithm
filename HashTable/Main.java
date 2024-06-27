@@ -6,10 +6,7 @@ public class Main {
         myHashTable.set("xyz", 50);
         myHashTable.set("qwe", 69);
         myHashTable.set("johncena", 89);
-        myHashTable.printTable();
-
-        int value = myHashTable.get("johncena");
-        System.out.println("Value = " +value);
+        System.out.println("Keys = " +myHashTable.keys());
 
 
     }
