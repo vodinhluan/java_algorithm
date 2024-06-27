@@ -1,0 +1,9 @@
+Hash table là bảng băm chứa các cặp key-value.
+Khi tôi nhập 1 key, nó sẽ băm ra để chuyển key đó thành [index] buckets trong mảng. 
+Mỗi cặp key-value được lưu trữ trong một bucket
+
+Hash table cho phép tra cứu phần tử trong thời gian trung bình O(1), 
+làm cho nó rất hữu ích khi bạn cần tra cứu nhanh một giá trị dựa trên một khóa (key).
+Ví dụ:
+Lưu trữ và tra cứu thông tin người dùng dựa trên tên người dùng (username) hoặc địa chỉ email.
+Lưu trữ và tra cứu giá sản phẩm dựa trên mã sản phẩm (product code).
