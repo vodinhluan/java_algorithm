@@ -1,0 +1,19 @@
+Heap (đống) là cấu trúc dữ liệu dạng cây (tree-based) đặc biệt 
+thỏa mãn heap property (tính chất của đống).
+ Heap có hai loại chính là:
+
+Max-heap (đống lớn): Trong một max-heap, giá trị tại mỗi nút (node) lớn hơn hoặc bằng giá trị của con của nó. 
+Nút ở vị trí đầu (gốc, root) chứa giá trị lớn nhất trong đống.
+Min-heap (đống nhỏ): Trong một min-heap, giá trị tại mỗi nút nhỏ hơn hoặc bằng giá trị của con của nó. 
+Nút ở vị trí đầu chứa giá trị nhỏ nhất trong đống.
+
+Heap khác với BinarySearch vì có thể chứa giá trị trùng.
+
+Cách tìm con của node cha:
+    leftChild = parentIndex * 2
+    rightChild = parentIndex * 2 + 1
+Cách tìm cha của 2 node con:
+    leftChildIndex / 2
+    (rightChild / 2) làm tròn
+
+Index của node parent xuất phát từ 1?
