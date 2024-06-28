@@ -1,0 +1,18 @@
+MA TRẬN KỀ (ADJACENCY MATRIX)
+Các tính chất của ma trận kề:
+Đối với đồ thị vô hướng G, thì ma trận kề tương ứng là ma trận đối xứng (a[i, j] = a[j, i]), điều
+này không đúng với đồ thị có hướng.
+Nếu G là đồ thị vô hướng và A là ma trận kề tương ứng thì trên ma trận A:
+Tổng các số trên hàng i = Tổng các số trên cột i = Bậc của đỉnh i = deg(i)
+Nếu G là đồ thị có hướng và A là ma trận kề tương ứng thì trên ma trận A:
+Tổng các số trên hàng i = Bán bậc ra của đỉnh i = deg+
+(i)
+Tổng các số trên cột i = Bán bậc vào của đỉnh i = deg-
+(i)
+
+
+cách add ma trận kề :
+{
+    "A" = ["B],
+    "B" = ["A]
+}

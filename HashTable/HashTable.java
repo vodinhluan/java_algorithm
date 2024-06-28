@@ -65,6 +65,7 @@ public class HashTable {
         return 0;
     }
 
+    @SuppressWarnings("rawtypes")
     public ArrayList keys() {
         ArrayList<String> allKeys = new ArrayList<>();
         for (int i = 0; i < dataMap.length; i++) {

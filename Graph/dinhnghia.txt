@@ -1,0 +1,15 @@
+Là một cấu trúc rời rạc gồm các đỉnh và các cạnh nối các đỉnh đó. Được mô tả hình thức:
+G = (V, E)
+V gọi là tập các đỉnh (Vertices) và E gọi là tập các cạnh (Edges). Có thể coi E là tập các cặp
+(u, v) với u và v là hai đỉnh của V.
+-----------------------------------------------------------------------------------------------
+Cho đồ thị G = (V, E). Định nghĩa một cách hình thức
+G được gọi là đơn đồ thị nếu giữa hai đỉnh u, v của V có nhiều nhất là 1 cạnh trong E nối từ u
+tới v.
+
+G được gọi là đa đồ thị nếu giữa hai đỉnh u, v của V có thể có nhiều hơn 1 cạnh trong E nối
+từ u tới v (Hiển nhiên đơn đồ thị cũng là đa đồ thị).
+
+G được gọi là đồ thị vô hướng (undirected graph) nếu các cạnh trong E là không định hướng,
+tức là cạnh nối hai đỉnh u, v bất kỳ cũng là cạnh nối hai đỉnh v, u. Hay nói cách khác, tập E
+gồm các cặp (u, v) không tính thứ tự. (u, v)≡(v, u)
