@@ -1,6 +1,7 @@
 Heap (đống) là cấu trúc dữ liệu dạng cây (tree-based) đặc biệt 
 thỏa mãn heap property (tính chất của đống).
- Heap có hai loại chính là:
+
+Heap có hai loại chính là:
 
 Max-heap (đống lớn): Trong một max-heap, giá trị tại mỗi nút (node) lớn hơn hoặc bằng giá trị của con của nó. 
 Nút ở vị trí đầu (gốc, root) chứa giá trị lớn nhất trong đống.
