@@ -33,3 +33,10 @@ public boolean isValidParentheses(String expression) {
 
 Tóm lại:
 Stack thường được sử dụng trong các tình huống cần quản lý các thao tác theo nguyên tắc LIFO (Last In, First Out), như điều hướng trang web, kiểm tra dấu ngoặc, và quản lý ngăn xếp cuộc gọi.
+Stack và giai thừa có liên quan đến nhau trong cách triển khai thuật toán tính giai thừa, đặc biệt khi sử dụng đệ quy.
+Khi tính giai thừa bằng đệ quy, mỗi lời gọi hàm được đặt lên ngăn xếp cuộc gọi 
+(call stack) cho đến khi đạt đến trường hợp cơ sở (base case). 
+Sau đó, các lời gọi hàm bắt đầu được lấy ra khỏi ngăn xếp và kết quả được tính toán ngược lại.
+
+Ví dụ khác:
+Trong hàm A gọi hàm B, B gọi C... A->B->C->D thì đây gọi là callstack
