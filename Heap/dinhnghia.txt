@@ -17,4 +17,5 @@ Cách tìm cha của 2 node con:
     leftChildIndex / 2
     (rightChild / 2) làm tròn
 
-Index của node parent xuất phát từ 1?
+Hàm sinkDown được sử dụng để cân bằng lại Heap 
+sau khi có thay đổi giá trị của một phần tử.

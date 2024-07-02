@@ -1,0 +1,35 @@
+Ví dụ thực tế về Stack:
+Stack (Ngăn xếp):
+Duyệt web (Web Browser Navigation):
+
+Khi bạn duyệt web và nhấn các liên kết, trình duyệt lưu lại các trang đã truy cập vào một ngăn xếp. Khi bạn nhấn nút "quay lại" (back), trình duyệt lấy trang cuối cùng từ ngăn xếp và hiển thị nó.
+Ví dụ:
+
+Stack<String> backStack = new Stack<>();
+backStack.push("HomePage");
+backStack.push("Page1");
+backStack.push("Page2");
+
+System.out.println(backStack.pop()); // Output: Page2
+System.out.println(backStack.pop()); // Output: Page1
+Kiểm tra dấu ngoặc trong biểu thức toán học:
+
+Để kiểm tra xem các dấu ngoặc trong một biểu thức có khớp nhau hay không, bạn có thể sử dụng một ngăn xếp.
+Ví dụ:
+
+public boolean isValidParentheses(String expression) {
+    Stack<Character> stack = new Stack<>();
+    for (char ch : expression.toCharArray()) {
+        if (ch == '(') {
+            stack.push(ch);
+        } else if (ch == ')') {
+            if (stack.isEmpty() || stack.pop() != '(')) {
+                return false;
+            }
+        }
+    }
+    return stack.isEmpty();
+}
+
+Tóm lại:
+Stack thường được sử dụng trong các tình huống cần quản lý các thao tác theo nguyên tắc LIFO (Last In, First Out), như điều hướng trang web, kiểm tra dấu ngoặc, và quản lý ngăn xếp cuộc gọi.

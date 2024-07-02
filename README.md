@@ -14,5 +14,5 @@
 13. QUICK SORT
 14. DYNAMIC PROGRAMMING
 
-# TÀI LIỆU THAM KHẢOiiiiiiiiiiiiiiiiii
+# TÀI LIỆU THAM KHẢO
 Giải thuật và Lập trình, Bài giảng chuyên đề, Lê Minh Hoàng 
