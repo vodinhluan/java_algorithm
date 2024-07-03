@@ -3,18 +3,22 @@ package Trees;
 public class Main {
     public static void main(String[] args) {
         BinarySearchTree myBST = new BinarySearchTree();
-        myBST.insert(12);
-        myBST.insert(7);
-        myBST.insert(20);
-        myBST.insert(2);
-        myBST.insert(11);
-        myBST.insert(13);
+        myBST.insert(47);
+        myBST.insert(21);
+        myBST.insert(76);
+        myBST.insert(18);
+        myBST.insert(27);
+        myBST.insert(52);
+        myBST.insert(82);
 
-        myBST.insert(38);
+        System.out.println("\nRoot: "+myBST.root.value);
+        System.out.println("\nRoot->Left: "+myBST.root.left.value);
+        System.out.println("\nRoot->Right: "+myBST.root.right.value);
+        myBST.rDelete(21);
 
-        System.out.println(myBST.root.left.right.value);
-        System.out.println(myBST.contains(2));
-        System.out.println("Recursive BST "+myBST.rContains(10));
+        System.out.println("\nRoot: "+myBST.root.value);
+        System.out.println("\nRoot->Left: "+myBST.root.left.value);
+        System.out.println("\nRoot->Right: "+myBST.root.right.value);
 
     }
 }
