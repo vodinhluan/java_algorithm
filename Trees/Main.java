@@ -14,5 +14,7 @@ public class Main {
 
         System.out.println(myBST.root.left.right.value);
         System.out.println(myBST.contains(2));
+        System.out.println("Recursive BST "+myBST.rContains(10));
+
     }
 }
