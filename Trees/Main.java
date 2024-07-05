@@ -20,7 +20,7 @@ public class Main {
         // System.out.println("\nRoot->Left: "+myBST.root.left.value);
         // System.out.println("\nRoot->Right: "+myBST.root.right.value);
 
-        System.out.println(myBST.BFS());
+        System.out.println(myBST.DFSPreOrder());
 
     }
 }

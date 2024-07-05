@@ -149,5 +149,27 @@ public class BinarySearchTree {
         return results;
     }
 
+    // DFS
+    public ArrayList<Integer> DFSPreOrder() {
+        ArrayList<Integer> results = new ArrayList<>();
+        class Traverse {
+            Traverse(Node currentNode) { // add value to stack 
+                results.add(currentNode.value);
+                // nếu run xong thì sẽ xóa khỏi stack
+                if (currentNode.left != null) {
+                    new Traverse(currentNode.left);
+                }
+                if (currentNode.right != null) {
+                    new Traverse(currentNode.right);
+                }
+            }
+        }
+
+        new Traverse(root);
+
+        return results;
+        
+    }
+
     
 }
