@@ -1,0 +1,14 @@
+Duyệt cây
+1. BFS:
+BFS (Breadth-First Search):
+
+Tìm kiếm theo chiều rộng: Khám phá các đỉnh lân cận trước, sau đó mới đi sâu vào các cấp tiếp theo.
+Hình ảnh: Mở rộng như sóng nước lan ra.
+Ứng dụng: Tìm kiếm đường đi ngắn nhất, kiểm tra tính liên thông, ...
+
+2. DFS:
+DFS (Depth-First Search):
+
+Tìm kiếm theo chiều sâu: Đi sâu vào một nhánh cho đến khi gặp nút cụt, sau đó mới quay lại và thử nhánh khác.
+Hình ảnh: Thám hiểm hang động, đi vào ngõ cụt trước.
+Ứng dụng: Duyệt cây, tìm kiếm thành phần liên thông, ...

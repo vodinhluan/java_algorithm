@@ -11,14 +11,16 @@ public class Main {
         myBST.insert(52);
         myBST.insert(82);
 
-        System.out.println("\nRoot: "+myBST.root.value);
-        System.out.println("\nRoot->Left: "+myBST.root.left.value);
-        System.out.println("\nRoot->Right: "+myBST.root.right.value);
-        myBST.rDelete(21);
+        // System.out.println("\nRoot: "+myBST.root.value);
+        // System.out.println("\nRoot->Left: "+myBST.root.left.value);
+        // System.out.println("\nRoot->Right: "+myBST.root.right.value);
+        // myBST.rDelete(21);
 
-        System.out.println("\nRoot: "+myBST.root.value);
-        System.out.println("\nRoot->Left: "+myBST.root.left.value);
-        System.out.println("\nRoot->Right: "+myBST.root.right.value);
+        // System.out.println("\nRoot: "+myBST.root.value);
+        // System.out.println("\nRoot->Left: "+myBST.root.left.value);
+        // System.out.println("\nRoot->Right: "+myBST.root.right.value);
+
+        System.out.println(myBST.BFS());
 
     }
 }
