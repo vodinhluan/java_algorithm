@@ -8,3 +8,8 @@ Các loại Sort:
 - Sắp xếp bằng cách tìm minIndex
 - Duyệt bằng cách chạy 2 vòng lặp, swap vòng lặp i với minIndex
 - Độ phức tạp thời gian trung bình: O(n^2)
+
+3. Insertion sort
+- Sắp xếp bằng cách so sánh từ phần tử thứ 2 trở lên so với thứ 1
+- Duyệt tới khi nào tìm được phần tử bé hơn phần tử 1 -> swap
+- Độ phức tạp thời gian trung bình: O(n^2)
