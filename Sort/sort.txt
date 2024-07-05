@@ -1,0 +1,5 @@
+Các loại Sort:
+1. Bubble sort 
+- Sắp xếp bằng cách so sánh 2 số kế nhau
+- Duyệt bằng cách chạy 2 vòng lặp
+- Độ phức tạp: O(N^2)
