@@ -170,6 +170,7 @@ public class BinarySearchTree {
         return results;
     }
 
+    // nếu không có node con thì lấy
     public ArrayList<Integer> DFSPostOrder() {
         ArrayList<Integer> results = new ArrayList<>();
         class Traverse {
@@ -182,6 +183,27 @@ public class BinarySearchTree {
                 }
 
                 results.add(currentNode.value);
+            }
+        }
+        new Traverse(root);
+        return results;
+    }
+
+    // nếu không có node con bên trái thì lấy
+    public ArrayList<Integer> DFSInOrder() {
+        ArrayList<Integer> results = new ArrayList<>();
+        class Traverse {
+            Traverse(Node currentNode) {
+                if (currentNode.left != null) {
+                    new Traverse(currentNode.left);
+                }
+                
+                results.add(currentNode.value);
+
+                if (currentNode.right != null) {
+                    new Traverse(currentNode.right);
+                }
+
             }
         }
         new Traverse(root);

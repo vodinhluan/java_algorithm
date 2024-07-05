@@ -22,6 +22,7 @@ public class Main {
 
         System.out.println(myBST.DFSPreOrder());
         System.out.println(myBST.DFSPostOrder());
+        System.out.println(myBST.DFSInOrder());
 
     }
 }
