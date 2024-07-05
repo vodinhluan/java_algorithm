@@ -3,3 +3,8 @@ Các loại Sort:
 - Sắp xếp bằng cách so sánh 2 số kế nhau
 - Duyệt bằng cách chạy 2 vòng lặp
 - Độ phức tạp: O(N^2)
+
+2. Selection sort
+- Sắp xếp bằng cách tìm minIndex
+- Duyệt bằng cách chạy 2 vòng lặp, swap vòng lặp i với minIndex
+- Độ phức tạp thời gian trung bình: O(n^2)
