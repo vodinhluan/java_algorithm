@@ -21,6 +21,7 @@ public class Main {
         // System.out.println("\nRoot->Right: "+myBST.root.right.value);
 
         System.out.println(myBST.DFSPreOrder());
+        System.out.println(myBST.DFSPostOrder());
 
     }
 }
