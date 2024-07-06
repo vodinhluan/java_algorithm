@@ -3,7 +3,7 @@ package RecursiveSort;
 import java.util.Arrays;
 
 public class MergeSort {
-    public static int[] mergeSort(int[] arr1, int[] arr2) {
+    public static int[] merge(int[] arr1, int[] arr2) {
         int[] combined = new int[arr1.length + arr2.length];
         int index = 0;
         int i = 0;
@@ -17,9 +17,7 @@ public class MergeSort {
                 combined[index] = arr2[j];
                 index++;
                 j++;
-            }
-
-            
+            } 
         }
         
         while (i < arr1.length) {
@@ -27,20 +25,29 @@ public class MergeSort {
             index++;
             i++;
         }
-
-        while (i < arr2.length) {
+        while (j < arr2.length) {
             combined[index] = arr2[j];
             index++;
             j++;
         }
-        
         return combined;
     }
 
+    public static int[] mergeSort(int[] array) {
+        if (array.length == 1) return array;
+
+        int midIndex = array.length/2;
+        int[] left = mergeSort(Arrays.copyOfRange(array, 0, midIndex));
+        int[] right = mergeSort(Arrays.copyOfRange(array, midIndex, array.length));
+
+        return merge(left, right);
+    }
+
     public static void main(String[] args) {
-        int[] arr1 = {1, 3, 7, 8};
-        int[] arr2 = {2, 4, 5, 6};
-        int[] result = mergeSort(arr1, arr2);
-        System.out.println(Arrays.toString(result));
+
+        int [] arr = {3, 1, 4, 2};
+        int [] arrNew = mergeSort(arr);
+        System.out.println("Before: "+Arrays.toString(arr));
+        System.out.println("After: "+Arrays.toString(arrNew));
     }
 }
