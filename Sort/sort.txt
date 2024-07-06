@@ -13,3 +13,9 @@ Các loại Sort:
 - Sắp xếp bằng cách so sánh từ phần tử thứ 2 trở lên so với thứ 1
 - Duyệt tới khi nào tìm được phần tử bé hơn phần tử 1 -> swap
 - Độ phức tạp thời gian trung bình: O(n^2)
+
+4. Merge sort
+- Sắp xếp bằng cách chia đôi mảng
+- Sắp xếp bé tới lớn từng mảng
+- Duyệt vòng lặp i của mảng 1, j của mảng 2 để so sánh
+- Độ phức tạp thời gian trung bình: O(n log n)	
