@@ -19,3 +19,8 @@ Các loại Sort:
 - Sắp xếp bé tới lớn từng mảng
 - Duyệt vòng lặp i của mảng 1, j của mảng 2 để so sánh
 - Độ phức tạp thời gian trung bình: O(n log n)	
+
+5. Quick sort
+- Sắp xếp bằng cách chọn phần tử đầu tiên làm mốc
+- Duyệt mảng, nếu phần tử nào nhỏ hơn pt gốc thì nằm bên trái, lớn hơn nằm bên phải
+- Độ phức tạp thời gian trung bình: 
