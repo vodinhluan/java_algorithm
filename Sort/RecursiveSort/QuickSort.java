@@ -23,10 +23,17 @@ public class QuickSort {
         return swapIndex;
     }
 
+    public static void quickSort(int[] array, int left, int right) {
+        if (left < right) {
+            int pivotIndex = pivot(array, left, right);
+            quickSort(array, left, pivotIndex-1);
+            quickSort(array, pivotIndex+1, right);
+        }
+    }
+
     public static void main(String args[]) {
         int[] array = {4, 6, 1, 7, 3, 2, 5};
-        int returnIndex = pivot(array, 0, 6);
-        System.out.println("Return Index: "+returnIndex);
+        quickSort(array, 0, 6);
         System.out.println(Arrays.toString(array));
         
     }
